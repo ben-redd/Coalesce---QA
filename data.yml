@@ -2483,13 +2483,12 @@ stepTypes:
     metadata:
       defaultStorageLocation: null
       error: null
-      nodeMetadataSpec: |-
+      nodeMetadataSpec: |
         capitalized: New Type
         short: NEW
         tagColor: gray
         deployStrategy: advanced
         plural: New Types
-        alwaysDeploy: true
       templates:
         create:
           templateString: |-
