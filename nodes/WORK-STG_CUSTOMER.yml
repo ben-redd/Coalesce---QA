@@ -133,7 +133,20 @@ steps:
         sourceMapping:
           - aliases: {}
             customSQL:
-              customSQL: ""
+              customSQL: |-
+                {{ stage('Override Create SQL') }}
+                	CREATE OR REPLACE VIEW {{ ref('WORK', 'STG_CUSTOMER')}} AS (
+                		SELECT 
+                 C_CUSTKEY AS C_CUSTKEY,
+                 C_NAME AS C_NAME,
+                 C_ADDRESS AS C_ADDRESS,
+                 C_NATIONKEY AS C_NATIONKEY,
+                 C_PHONE AS C_PHONE,
+                 C_ACCTBAL AS C_ACCTBAL,
+                 C_MKTSEGMENT AS C_MKTSEGMENT,
+                 C_COMMENT AS C_COMMENT
+                 FROM {{ ref('SRC', 'CUSTOMER') }}
+                	)
             dependencies:
               - locationName: SRC
                 nodeName: CUSTOMER
