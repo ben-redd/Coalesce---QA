@@ -1,6 +1,6 @@
 fileVersion: 1
 id: 48c69917-8550-4ad3-b159-d7b66b6af94f
-name: DIM_NAME_EDIT
+name: DIM_TEST
 operation:
   config:
     insertStrategy: INSERT
@@ -80,7 +80,6 @@ operation:
         config: {}
         dataType: NUMBER(12,2)
         description: ""
-        isBusinessKey: true
         name: S_ACCTBAL
         nullable: false
         sourceColumnReferences:
@@ -95,6 +94,7 @@ operation:
         config: {}
         dataType: VARCHAR(101)
         description: ""
+        isBusinessKey: true
         name: S_COMMENT
         nullable: true
         sourceColumnReferences:
@@ -116,9 +116,9 @@ operation:
             nodeName: STG_SUPPLIER
         join:
           joinCondition: FROM {{ ref('WORK', 'STG_SUPPLIER') }} "STG_SUPPLIER"
-        name: DIM_NAME_EDIT
+        name: DIM_TEST
         noLinkRefs: []
-  name: DIM_NAME_EDIT
+  name: DIM_TEST
   overrideSQL: false
   schema: ""
   sqlType: Dimension
