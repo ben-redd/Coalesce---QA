@@ -1,11 +1,11 @@
 fileVersion: 1
-id: "4"
+id: "6"
 mappingDefinitions:
   SRC:
     database: COALESCE_SAMPLE_DATABASE
     schema: TPCH_SF001
   WORK:
     database: BEN_EDW
-    schema: SMOKE
-name: Testing CD-7732
+    schema: QA_STABLE_ENV
+name: QA Stable Environment
 type: Environment
