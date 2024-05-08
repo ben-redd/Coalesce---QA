@@ -6,6 +6,6 @@ mappingDefinitions:
     schema: TPCH_SF001
   WORK:
     database: BEN_EDW
-    schema: CD_7732_PROD
+    schema: CD9149ENV
 name: CD-7732 Production
 type: Environment
