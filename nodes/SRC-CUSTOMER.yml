@@ -1,8 +1,8 @@
 fileVersion: 1
-id: 589643fa-15c5-44aa-86b7-a8307f0a4fa4
+id: 32a27c9b-760f-4ba4-84b4-e1e37d38b3dd
 name: CUSTOMER
 operation:
-  database: SNOWFLAKE_SAMPLE_DATA
+  database: ""
   dataset: ""
   deployEnabled: true
   description: Customer data as defined by TPC-H
@@ -14,8 +14,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: b99655fe-e0f3-4614-8c3f-ff15930e939f
-          stepCounter: 589643fa-15c5-44aa-86b7-a8307f0a4fa4
+          columnCounter: bf4106f8-d264-4968-a3ed-0ae7d713a19d
+          stepCounter: 32a27c9b-760f-4ba4-84b4-e1e37d38b3dd
         config: {}
         dataType: NUMBER(38,0)
         defaultValue: ""
@@ -29,8 +29,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 104ff6ab-eca3-49ad-b290-d4901e7d2987
-          stepCounter: 589643fa-15c5-44aa-86b7-a8307f0a4fa4
+          columnCounter: f2829857-ec2a-4f9b-8070-f8c5bdb6a578
+          stepCounter: 32a27c9b-760f-4ba4-84b4-e1e37d38b3dd
         config: {}
         dataType: VARCHAR(25)
         defaultValue: ""
@@ -44,8 +44,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 097703e3-4017-4dc4-9c7c-7e7e0a13c065
-          stepCounter: 589643fa-15c5-44aa-86b7-a8307f0a4fa4
+          columnCounter: 1f8b53f8-eb07-4877-8f62-a19643857270
+          stepCounter: 32a27c9b-760f-4ba4-84b4-e1e37d38b3dd
         config: {}
         dataType: VARCHAR(40)
         defaultValue: ""
@@ -59,8 +59,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 5973e0f2-9a83-41b3-89f1-8d10b72ba2de
-          stepCounter: 589643fa-15c5-44aa-86b7-a8307f0a4fa4
+          columnCounter: d4de7a50-6955-45b9-a997-ee0165468312
+          stepCounter: 32a27c9b-760f-4ba4-84b4-e1e37d38b3dd
         config: {}
         dataType: NUMBER(38,0)
         defaultValue: ""
@@ -74,8 +74,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: e79fa779-57a6-4fa8-9fd3-8ea881f01074
-          stepCounter: 589643fa-15c5-44aa-86b7-a8307f0a4fa4
+          columnCounter: ad52db6e-add1-4399-8453-24238f4a48c8
+          stepCounter: 32a27c9b-760f-4ba4-84b4-e1e37d38b3dd
         config: {}
         dataType: VARCHAR(15)
         defaultValue: ""
@@ -89,8 +89,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: d1bc877a-1ded-4ab7-acb8-8f56a5cd74b8
-          stepCounter: 589643fa-15c5-44aa-86b7-a8307f0a4fa4
+          columnCounter: c16747dc-504c-4d03-8b16-7c5f22ebf249
+          stepCounter: 32a27c9b-760f-4ba4-84b4-e1e37d38b3dd
         config: {}
         dataType: NUMBER(12,2)
         defaultValue: ""
@@ -104,8 +104,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 9759317f-f842-43d7-88d4-56d2430e0cb9
-          stepCounter: 589643fa-15c5-44aa-86b7-a8307f0a4fa4
+          columnCounter: 170fde5e-8bbb-4388-8f17-d8f058705fe2
+          stepCounter: 32a27c9b-760f-4ba4-84b4-e1e37d38b3dd
         config: {}
         dataType: VARCHAR(10)
         defaultValue: ""
@@ -119,8 +119,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 41ef7e49-c93e-4397-8f17-65cb01c38a60
-          stepCounter: 589643fa-15c5-44aa-86b7-a8307f0a4fa4
+          columnCounter: 793b04f6-88f4-46d4-90ab-4c3568aae89d
+          stepCounter: 32a27c9b-760f-4ba4-84b4-e1e37d38b3dd
         config: {}
         dataType: VARCHAR(117)
         defaultValue: ""
@@ -132,7 +132,7 @@ operation:
     join:
       joinCondition: FROM {{ ref('SRC', 'CUSTOMER') }}
   name: CUSTOMER
-  schema: TPCH_SF1
+  schema: ""
   sqlType: Source
   table: CUSTOMER
   type: sourceInput

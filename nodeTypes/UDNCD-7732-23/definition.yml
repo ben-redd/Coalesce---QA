@@ -1,0 +1,14 @@
+fileVersion: 1
+id: "23"
+isDisabled: false
+metadata:
+  defaultStorageLocation: null
+  error: null
+  nodeMetadataSpec: |
+    capitalized: New Type
+    short: NEW
+    tagColor: gray
+    deployStrategy: advanced
+    plural: New Types
+name: UDN CD-7732
+type: NodeType

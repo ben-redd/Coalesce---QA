@@ -1,0 +1,6 @@
+excludeSelector: ""
+fileVersion: 1
+id: "1"
+includeSelector: "{ location: SRC name: ORDERS } OR { location: WORK name: STG_ORDERS }"
+name: New Job
+type: Job

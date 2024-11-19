@@ -1,0 +1,11 @@
+fileVersion: 1
+id: "11"
+mappingDefinitions:
+  SRC:
+    database: COALESCE_SAMPLE_DATABASE
+    schema: TPCH_SF001
+  WORK:
+    database: BEN_EDW
+    schema: QA_STABLE_ENV
+name: Main ENV
+type: Environment

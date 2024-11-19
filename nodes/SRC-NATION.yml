@@ -1,8 +1,8 @@
 fileVersion: 1
-id: 6164faac-3e91-49cb-b71c-dac8904de29e
+id: b4d8262f-b619-4d66-ace6-079eb7ca2022
 name: NATION
 operation:
-  database: SNOWFLAKE_SAMPLE_DATA
+  database: ""
   dataset: ""
   deployEnabled: true
   description: Nation data as defined by TPC-H
@@ -14,8 +14,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 9ef60c8b-c1cf-4e8a-9f11-56ba48891a95
-          stepCounter: 6164faac-3e91-49cb-b71c-dac8904de29e
+          columnCounter: bf75863b-104f-4be8-805b-6a8112bc4541
+          stepCounter: b4d8262f-b619-4d66-ace6-079eb7ca2022
         config: {}
         dataType: NUMBER(38,0)
         defaultValue: ""
@@ -29,8 +29,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 94dccade-e590-471c-9643-f38338d89032
-          stepCounter: 6164faac-3e91-49cb-b71c-dac8904de29e
+          columnCounter: 448648c4-aaeb-4ee2-9961-00e32ecf8367
+          stepCounter: b4d8262f-b619-4d66-ace6-079eb7ca2022
         config: {}
         dataType: VARCHAR(25)
         defaultValue: ""
@@ -44,8 +44,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 2309f9b2-8eed-479f-a7c4-280e0495396c
-          stepCounter: 6164faac-3e91-49cb-b71c-dac8904de29e
+          columnCounter: ae615fd9-292f-44ba-a727-002af7043a7d
+          stepCounter: b4d8262f-b619-4d66-ace6-079eb7ca2022
         config: {}
         dataType: NUMBER(38,0)
         defaultValue: ""
@@ -59,8 +59,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: fc5d8020-70af-42b2-a2c5-47e8270013b5
-          stepCounter: 6164faac-3e91-49cb-b71c-dac8904de29e
+          columnCounter: cc171ee6-84c2-4074-8e39-7cf615e4d747
+          stepCounter: b4d8262f-b619-4d66-ace6-079eb7ca2022
         config: {}
         dataType: VARCHAR(152)
         defaultValue: ""
@@ -72,7 +72,7 @@ operation:
     join:
       joinCondition: FROM {{ ref('SRC', 'NATION') }}
   name: NATION
-  schema: TPCH_SF1
+  schema: ""
   sqlType: Source
   table: NATION
   type: sourceInput
