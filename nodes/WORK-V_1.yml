@@ -56,6 +56,26 @@ operation:
               - columnCounter: 11e63efa-dc0d-4fcd-98fe-33904b2329ec
                 stepCounter: d2a7d277-2a74-47be-bd11-faddcc7f78b9
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 70dc492e-520e-446e-8203-cff9e6dbfd67
+          stepCounter: c179f8c8-a3b0-4f2c-a01c-8413f6ea8e8c
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: R_TEST
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: ""
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
