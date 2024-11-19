@@ -1,0 +1,78 @@
+fileVersion: 1
+id: aba35e05-5a94-4884-af33-548a11f1627e
+name: V_2
+operation:
+  config:
+    insertStrategy: UNION
+    selectDistinct: false
+  database: ""
+  deployEnabled: true
+  description: Region data as defined by TPC-H
+  isMultisource: false
+  locationName: WORK
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8333d781-16cd-493b-ab67-dd31ce44b500
+          stepCounter: aba35e05-5a94-4884-af33-548a11f1627e
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: R_REGIONKEY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2da4e794-cfff-4c4f-ab79-e17c708e4afe
+                stepCounter: c179f8c8-a3b0-4f2c-a01c-8413f6ea8e8c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a25d576b-835a-4179-9dd0-21e93da2844c
+          stepCounter: aba35e05-5a94-4884-af33-548a11f1627e
+        config: {}
+        dataType: VARCHAR(25)
+        description: ""
+        name: R_NAME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 30f50309-f3bf-4f73-b200-c03e7fe8e26e
+                stepCounter: c179f8c8-a3b0-4f2c-a01c-8413f6ea8e8c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: aa1e65a6-d69e-4479-a39c-1799434020e2
+          stepCounter: aba35e05-5a94-4884-af33-548a11f1627e
+        config: {}
+        dataType: VARCHAR(152)
+        description: ""
+        name: R_COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5ce470ee-1d97-4286-99e2-31f094320dc0
+                stepCounter: c179f8c8-a3b0-4f2c-a01c-8413f6ea8e8c
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: WORK
+            nodeName: V_1
+        join:
+          joinCondition: FROM {{ ref('WORK', 'V_1') }} "V_1"
+        name: V_2
+        noLinkRefs: []
+  name: V_2
+  overrideSQL: false
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node
